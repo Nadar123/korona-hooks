@@ -1,4 +1,7 @@
 @import './components/Cards/cards.modules.scss';
+@import './components/Chart/chart.scss';
+@import './components/CountryPicker/counterPicker.scss';
+@import './components/footer/footer.scss';
 
 body {
     background-color: rgb(250,250,250);
@@ -10,5 +13,25 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .logo {
+        margin: 1rem 0 3rem 0;
+        width: 20%;
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        margin: 0 10px;
+        .logo {
+            width: 50%;
+        }
+    }
+    .chartjs-size-monitor {
+        canvas {
+            
+        }
     }
 }

@@ -1,0 +1,7 @@
+.footer-logo {
+  margin: 1rem 0 3rem 0;
+  width: 10%;
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
